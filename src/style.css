@@ -55,14 +55,16 @@
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
-  /* ---- Pattern tiles (SVG data URIs, reusable anywhere) ---- */
-  --pat-zebra: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23d8b98f'/%3E%3Cpath d='M0 14 C 25 2, 45 30, 70 16 S 90 4, 100 14' stroke='%23111' stroke-width='9' fill='none'/%3E%3Cpath d='M0 46 C 20 62, 40 34, 62 50 S 88 58, 100 46' stroke='%23111' stroke-width='12' fill='none'/%3E%3Cpath d='M0 80 C 22 70, 42 96, 66 82 S 90 74, 100 80' stroke='%23111' stroke-width='8' fill='none'/%3E%3C/svg%3E");
-  --pat-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23fff'/%3E%3Crect width='50' height='50' fill='%23111'/%3E%3Crect x='50' y='50' width='50' height='50' fill='%23111'/%3E%3C/svg%3E");
-  --pat-polka: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23111'/%3E%3Ccircle cx='25' cy='25' r='11' fill='%23fff'/%3E%3Ccircle cx='75' cy='75' r='11' fill='%23fff'/%3E%3C/svg%3E");
-  --pat-gingham: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23fff'/%3E%3Crect width='50' height='100' fill='%234a6fb5' opacity='.55'/%3E%3Crect width='100' height='50' fill='%234a6fb5' opacity='.55'/%3E%3C/svg%3E");
-  --pat-lace: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23c6c6c6'/%3E%3Cg fill='%23f4f4f4' stroke='%237b7b7b' stroke-width='1.2'%3E%3Ccircle cx='50' cy='32' r='9'/%3E%3Ccircle cx='66' cy='41' r='9'/%3E%3Ccircle cx='66' cy='59' r='9'/%3E%3Ccircle cx='50' cy='68' r='9'/%3E%3Ccircle cx='34' cy='59' r='9'/%3E%3Ccircle cx='34' cy='41' r='9'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='6' fill='%237b7b7b'/%3E%3Cg fill='%23f4f4f4' stroke='%237b7b7b' stroke-width='1.2'%3E%3Ccircle cx='0' cy='0' r='7'/%3E%3Ccircle cx='100' cy='0' r='7'/%3E%3Ccircle cx='0' cy='100' r='7'/%3E%3Ccircle cx='100' cy='100' r='7'/%3E%3C/g%3E%3Cg fill='%237b7b7b'%3E%3Ccircle cx='14' cy='14' r='2'/%3E%3Ccircle cx='86' cy='14' r='2'/%3E%3Ccircle cx='14' cy='86' r='2'/%3E%3Ccircle cx='86' cy='86' r='2'/%3E%3C/g%3E%3C/svg%3E");
-  --pat-tiger: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f08a24'/%3E%3Cg fill='%23111'%3E%3Cpath d='M0 8 Q 28 24 52 10 Q 76 -4 100 8 L100 15 Q 76 6 52 20 Q 28 34 0 20 Z'/%3E%3Cpath d='M0 40 Q 24 30 48 46 Q 74 62 100 40 L100 52 Q 74 74 48 58 Q 24 42 0 54 Z'/%3E%3Cpath d='M0 78 Q 30 92 55 76 Q 80 60 100 78 L100 84 Q 80 70 55 86 Q 30 102 0 88 Z'/%3E%3C/g%3E%3C/svg%3E");
-  --pat-terrazzo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23e8846e'/%3E%3Cpolygon points='8,12 22,6 26,20 12,26' fill='%23efebe1'/%3E%3Cpolygon points='40,4 56,10 50,24 36,18' fill='%23111'/%3E%3Cpolygon points='72,8 90,4 94,18 80,26' fill='%23fff'/%3E%3Cpolygon points='14,42 30,36 34,52 18,58' fill='%23c4573f'/%3E%3Cpolygon points='48,38 64,44 60,60 44,54' fill='%23efebe1'/%3E%3Cpolygon points='78,40 94,46 88,62 74,56' fill='%23111'/%3E%3Cpolygon points='6,72 20,68 26,84 10,90' fill='%23fff'/%3E%3Cpolygon points='38,70 54,76 48,92 34,86' fill='%23c4573f'/%3E%3Cpolygon points='70,74 86,70 92,86 76,92' fill='%23efebe1'/%3E%3Ccircle cx='32' cy='22' r='3' fill='%23111'/%3E%3Ccircle cx='66' cy='30' r='2.5' fill='%23fff'/%3E%3Ccircle cx='60' cy='80' r='3' fill='%23111'/%3E%3Ccircle cx='96' cy='96' r='2.5' fill='%23efebe1'/%3E%3C/svg%3E");
+  /* ---- Pattern tiles: real textures cropped from the brand collage (public/patterns) ---- */
+  --pat-zebra: url("/patterns/zebra.jpg");
+  --pat-check: url("/patterns/check.jpg");
+  --pat-polka: url("/patterns/polka.jpg");
+  --pat-gingham: url("/patterns/gingham.jpg");
+  --pat-lace: url("/patterns/lace.jpg");
+  --pat-tiger: url("/patterns/tiger.jpg");
+  --pat-mosaic: url("/patterns/mosaic.jpg");
+  --pat-leopard: url("/patterns/leopard.jpg");
+  --pat-dots: url("/patterns/dots.jpg");
 }
 
 *,
@@ -190,8 +192,9 @@ select {
   position: absolute;
   inset: 0;
   background-image: var(--pattern);
-  background-size: var(--tile-scale, 56px) var(--tile-scale, 56px);
-  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: transform 0.5s var(--ease-out), opacity 0.6s ease;
   will-change: transform;
 }
@@ -205,23 +208,16 @@ select {
   transform: scale(1.07);
 }
 
-/* Per-pattern tile scales so each motif reads at a similar density */
-.tile[data-pattern="zebra"] { --pattern: var(--pat-zebra); --tile-scale: 96px; }
-.tile[data-pattern="check"] { --pattern: var(--pat-check); --tile-scale: 44px; }
-.tile[data-pattern="polka"] { --pattern: var(--pat-polka); --tile-scale: 44px; }
-.tile[data-pattern="gingham"] { --pattern: var(--pat-gingham); --tile-scale: 36px; }
-.tile[data-pattern="lace"] { --pattern: var(--pat-lace); --tile-scale: 64px; }
-.tile[data-pattern="tiger"] { --pattern: var(--pat-tiger); --tile-scale: 90px; }
-.tile[data-pattern="terrazzo"] { --pattern: var(--pat-terrazzo); --tile-scale: 84px; }
-
-/* The back face carries the incoming pattern during a crossfade */
-.tile__face--back[data-pattern="zebra"] { --pattern: var(--pat-zebra); --tile-scale: 96px; }
-.tile__face--back[data-pattern="check"] { --pattern: var(--pat-check); --tile-scale: 44px; }
-.tile__face--back[data-pattern="polka"] { --pattern: var(--pat-polka); --tile-scale: 44px; }
-.tile__face--back[data-pattern="gingham"] { --pattern: var(--pat-gingham); --tile-scale: 36px; }
-.tile__face--back[data-pattern="lace"] { --pattern: var(--pat-lace); --tile-scale: 64px; }
-.tile__face--back[data-pattern="tiger"] { --pattern: var(--pat-tiger); --tile-scale: 90px; }
-.tile__face--back[data-pattern="terrazzo"] { --pattern: var(--pat-terrazzo); --tile-scale: 84px; }
+/* Front face reads the tile's pattern; the back face carries the incoming one during a crossfade */
+.tile[data-pattern="zebra"], .tile__face--back[data-pattern="zebra"] { --pattern: var(--pat-zebra); }
+.tile[data-pattern="check"], .tile__face--back[data-pattern="check"] { --pattern: var(--pat-check); }
+.tile[data-pattern="polka"], .tile__face--back[data-pattern="polka"] { --pattern: var(--pat-polka); }
+.tile[data-pattern="gingham"], .tile__face--back[data-pattern="gingham"] { --pattern: var(--pat-gingham); }
+.tile[data-pattern="lace"], .tile__face--back[data-pattern="lace"] { --pattern: var(--pat-lace); }
+.tile[data-pattern="tiger"], .tile__face--back[data-pattern="tiger"] { --pattern: var(--pat-tiger); }
+.tile[data-pattern="mosaic"], .tile__face--back[data-pattern="mosaic"] { --pattern: var(--pat-mosaic); }
+.tile[data-pattern="leopard"], .tile__face--back[data-pattern="leopard"] { --pattern: var(--pat-leopard); }
+.tile[data-pattern="dots"], .tile__face--back[data-pattern="dots"] { --pattern: var(--pat-dots); }
 
 /* ------------------------------------------------------------------
    Main content
@@ -253,23 +249,16 @@ select {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  height: 40px;
+  height: clamp(72px, 9vh, 96px);
   color: var(--black);
   text-decoration: none;
   margin-bottom: clamp(20px, 4vh, 44px);
 }
-.logo__star {
-  width: 26px;
-  height: 26px;
-  fill: var(--black);
-}
-.logo__word {
-  font-family: var(--font-marker);
-  font-size: 38px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+.logo__img {
+  height: 100%;
+  width: auto;
+  /* Wordmark is black on transparent; multiply hides any residual paper tint on white/cream */
+  mix-blend-mode: multiply;
 }
 
 /* Headline */
@@ -403,69 +392,6 @@ select {
   display: none;
 }
 
-/* Stat stamps */
-.stats {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px clamp(20px, 3vw, 44px);
-}
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: clamp(96px, min(8vw, 14vh), 120px);
-  text-align: center;
-}
-.stamp {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1;
-}
-.stamp__svg {
-  width: 100%;
-  height: 100%;
-}
-.stamp__fill {
-  fill: var(--terracotta);
-}
-/* Round-capped dashes on the outer edge read as scalloped stamp perforations */
-.stamp__scallop {
-  fill: none;
-  stroke: var(--terracotta);
-  stroke-width: 9;
-  stroke-linecap: round;
-  stroke-dasharray: 0 11.8;
-}
-.stamp__ring {
-  fill: none;
-  stroke: var(--black);
-  stroke-width: 1.6;
-  stroke-dasharray: 5 4;
-}
-.stat__value {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-size: clamp(20px, 1.7vw, 26px);
-  letter-spacing: -0.01em;
-  font-variant-numeric: tabular-nums;
-  color: var(--black);
-}
-.stat__caption {
-  white-space: nowrap;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--black);
-}
-
 /* Bottom cream row */
 .apply__heading {
   margin: 0;
@@ -505,7 +431,16 @@ select {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.05);
+  transform-origin: 50% 40%;
+  animation: drift 28s ease-in-out infinite alternate;
+}
+@keyframes drift {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06) translate(-1.5%, 1%);
+  }
 }
 
 .annotation {
@@ -528,7 +463,8 @@ select {
   text-align: center;
   text-shadow:
     0 0 6px var(--cream),
-    0 0 14px var(--cream);
+    0 0 14px var(--cream),
+    0 0 24px var(--cream);
   opacity: 0;
   animation: annotation-in 0.7s var(--ease-out) 0.25s forwards;
 }
@@ -615,6 +551,11 @@ select {
   stroke: var(--black);
   stroke-width: 2;
   stroke-linecap: round;
+}
+.modal__mark {
+  width: 44px;
+  height: auto;
+  margin-bottom: 10px;
 }
 .modal__title {
   margin: 0 0 8px;
@@ -717,9 +658,6 @@ select {
   .headline {
     font-size: clamp(48px, 6.5vw, 72px);
   }
-  .stat {
-    width: clamp(104px, 12vw, 120px);
-  }
   .annotation {
     top: -14px;
     right: -8px;
@@ -741,8 +679,8 @@ select {
     padding-top: 28px;
     padding-bottom: 36px;
   }
-  .logo__word {
-    font-size: 32px;
+  .logo {
+    height: 64px;
   }
   .headline {
     font-size: 40px;
@@ -756,21 +694,6 @@ select {
   }
   .capture__row .btn {
     flex: 1 1 100%;
-  }
-  .stats {
-    gap: 20px 14px;
-  }
-  .stat {
-    /* 3-across on most phones; drops to 2+1 when the viewport is very narrow */
-    width: clamp(88px, calc((100% - 28px) / 3), 112px);
-  }
-  .stat__value {
-    font-size: 18px;
-  }
-  .stat__caption {
-    white-space: normal;
-    font-size: 10px;
-    line-height: 1.3;
   }
   .main__bottom {
     padding-top: 24px;
@@ -827,6 +750,9 @@ select {
   }
   .annotation__path {
     stroke-dashoffset: 0;
+    animation: none;
+  }
+  .portrait__img {
     animation: none;
   }
 }

@@ -1,9 +1,9 @@
 /**
  * Pattern tiles: fills each rail/strip with square-ish tiles cycling through
  * the seven patterns, and periodically swaps two random tiles with a crossfade.
- * Pattern artwork lives in CSS custom properties (see style.css).
+ * Pattern textures live in public/patterns and are mapped in CSS custom properties (see style.css).
  */
-const PATTERNS = ['zebra', 'check', 'polka', 'gingham', 'lace', 'tiger', 'terrazzo'];
+const PATTERNS = ['zebra', 'check', 'polka', 'gingham', 'lace', 'tiger', 'mosaic', 'leopard', 'dots'];
 const SWAP_INTERVAL_MS = 4000;
 const RAIL_TILE_COUNT = 7; // spec: 6–7 tiles top to bottom on desktop
 

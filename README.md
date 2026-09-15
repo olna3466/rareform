@@ -14,9 +14,8 @@ npm run preview  # serve dist/ locally
 ## Layout
 
 - `index.html` — semantic markup: pattern rail, main content, portrait panel, pattern strip, brand-application `<dialog>`.
-- `src/style.css` — all styling. The seven pattern tiles are SVG data URIs on `:root` custom properties (`--pat-zebra` … `--pat-terrazzo`) so they can be reused anywhere via `background-image: var(--pat-…)`.
+- `src/style.css` — all styling. The nine pattern tiles are photographic textures in `public/patterns/`, cropped from the brand collage and mapped to `:root` custom properties (`--pat-zebra` … `--pat-dots`) so they can be reused anywhere via `background-image: var(--pat-…)`.
 - `src/tiles.js` — fills the rail/strip with tiles, keeps them square-ish on resize, and crossfade-swaps two random tiles every 4s.
-- `src/stats.js` — counts the stat badges up from 0 when scrolled into view (skipped under `prefers-reduced-motion`).
 - `src/forms.js` — email capture with inline validation and a mocked 1s submit.
 - `src/modal.js` — accessible brand-application modal: focus trap, Esc/overlay close, focus restore.
 
@@ -31,5 +30,5 @@ npm run preview  # serve dist/ locally
 ## Notes
 
 - No backend. Both forms resolve after a 1s mock delay.
-- The portrait is a picsum placeholder with a local SVG fallback in `public/`.
+- Brand assets live in `public/brand/`: the wordmark and RF mark (backgrounds knocked out to transparent), the hero textile placeholder, and the full set of texture images from the deck under `textures/`. The hero image is a textile stand-in until a fashion photo is supplied.
 - The CTA button uses `--terracotta-cta` (#B84E37), a 4% darker terracotta, so 14px white text clears WCAG 4.5:1. Badges and other terracotta surfaces use the spec colour #C4573F.
