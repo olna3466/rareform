@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RAREFORM — a curated platform for independent fashion &amp; accessory brands. Get early access." />
+    <meta name="theme-color" content="#EFEBE1" />
+    <title>RAREFORM — Small Brands. A Bigger Tomorrow.</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="hero">
+      <!-- Zone 1: vertical pattern rail (becomes a top strip below 1200px). Decorative only. -->
+      <div class="pattern-rail" data-tiles="rail" aria-hidden="true"></div>
+
+      <!-- Zone 2: main content -->
+      <main class="main" id="main">
+        <section class="main__top" aria-labelledby="headline">
+          <a class="logo" href="/" aria-label="RAREFORM home">
+            <svg class="logo__star" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+              <path d="M16 2.5c1.2 5.2 2.6 8.7 4.4 9.9 1.8 1.1 5 1.7 9.1 1.9-4.1 1.4-6.9 3-8.3 4.7-1.4 1.7-2.2 5-2.7 9.8-.9-4.8-2-8.1-3.5-9.8-1.5-1.7-4.4-3.2-8.5-4.7 4.2-.5 7.2-1.3 8.7-2.6 1.5-1.3 1.9-4.4 .8-9.2z" />
+            </svg>
+            <span class="logo__word">Rareform</span>
+          </a>
+
+          <h1 class="headline" id="headline">
+            Small Brands.<br />
+            A Bigger <em>Tomorrow</em>.
+          </h1>
+
+          <p class="subhead">A curated platform for independent fashion &amp; accessory brands</p>
+
+          <form class="capture" id="capture-form" novalidate>
+            <div class="capture__row">
+              <label class="visually-hidden" for="capture-email">Email address</label>
+              <input
+                class="capture__input"
+                id="capture-email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="Email"
+                required
+                aria-describedby="capture-error"
+              />
+              <button class="btn btn--primary" type="submit" data-label="Get early access">
+                <span class="btn__label">Get early access</span>
+              </button>
+            </div>
+            <p class="capture__error" id="capture-error" role="alert"></p>
+          </form>
+          <p class="capture__success" id="capture-success" role="status" hidden>
+            <strong>You&rsquo;re on the list.</strong> We&rsquo;ll be in touch when early access opens.
+          </p>
+
+          <ul class="stats" aria-label="Market statistics">
+            <li class="stat">
+              <div class="stamp" aria-hidden="true">
+                <svg class="stamp__svg" viewBox="0 0 120 120" focusable="false">
+                  <circle class="stamp__fill" cx="60" cy="60" r="54" />
+                  <circle class="stamp__scallop" cx="60" cy="60" r="54" />
+                  <circle class="stamp__ring" cx="60" cy="60" r="44" />
+                </svg>
+                <span class="stat__value" data-count="41.9%">41.9%</span>
+              </div>
+              <span class="visually-hidden">41.9%</span>
+              <span class="stat__caption">Shopper intent</span>
+            </li>
+            <li class="stat">
+              <div class="stamp" aria-hidden="true">
+                <svg class="stamp__svg" viewBox="0 0 120 120" focusable="false">
+                  <circle class="stamp__fill" cx="60" cy="60" r="54" />
+                  <circle class="stamp__scallop" cx="60" cy="60" r="54" />
+                  <circle class="stamp__ring" cx="60" cy="60" r="44" />
+                </svg>
+                <span class="stat__value" data-count="63%">63%</span>
+              </div>
+              <span class="visually-hidden">63%</span>
+              <span class="stat__caption">Gen Z behavior</span>
+            </li>
+            <li class="stat">
+              <div class="stamp" aria-hidden="true">
+                <svg class="stamp__svg" viewBox="0 0 120 120" focusable="false">
+                  <circle class="stamp__fill" cx="60" cy="60" r="54" />
+                  <circle class="stamp__scallop" cx="60" cy="60" r="54" />
+                  <circle class="stamp__ring" cx="60" cy="60" r="44" />
+                </svg>
+                <span class="stat__value" data-count="$1.16T">$1.16T</span>
+              </div>
+              <span class="visually-hidden">$1.16T</span>
+              <span class="stat__caption">Market projection</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="main__bottom" aria-labelledby="apply-heading">
+          <h2 class="apply__heading" id="apply-heading">Apply as a brand</h2>
+          <button class="btn btn--outline" type="button" id="open-brand-modal" aria-haspopup="dialog">
+            <span class="btn__label">Signup a brand</span>
+          </button>
+        </section>
+      </main>
+
+      <!-- Zone 3: portrait panel -->
+      <aside class="panel" aria-label="Featured">
+        <div class="portrait-wrap">
+        <figure class="portrait">
+          <img
+            class="portrait__img"
+            src="https://picsum.photos/seed/rareform/800/1100?grayscale"
+            width="800"
+            height="1100"
+            alt="Black and white portrait of a model wearing pieces from an independent brand"
+            decoding="async"
+            fetchpriority="high"
+            onerror="this.onerror=null;this.src='/portrait-placeholder.svg'"
+          />
+        </figure>
+        <p class="annotation">
+          <span class="visually-hidden">More than ordinary</span>
+          <span class="annotation__text" aria-hidden="true">More<br />than<br />ordinary</span>
+          <svg class="annotation__scribble" viewBox="0 0 220 40" aria-hidden="true" focusable="false">
+            <path
+              class="annotation__path"
+              pathLength="1"
+              d="M4 14 C 30 4, 52 30, 80 16 S 128 6, 150 20 S 190 12, 214 10 M14 30 C 50 22, 90 38, 130 26 S 180 22, 206 30"
+            />
+          </svg>
+        </p>
+        </div>
+      </aside>
+
+      <!-- Zone 4: horizontal pattern strip. Decorative only. -->
+      <div class="pattern-strip" data-tiles="strip" aria-hidden="true"></div>
+    </div>
+
+    <!-- Brand application modal -->
+    <dialog class="modal" id="brand-modal" aria-labelledby="modal-title" aria-describedby="modal-desc">
+      <div class="modal__card">
+        <button class="modal__close" type="button" data-close-modal aria-label="Close dialog">
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+            <path d="M4 4l12 12M16 4L4 16" />
+          </svg>
+        </button>
+        <h2 class="modal__title" id="modal-title">Apply as a brand</h2>
+        <p class="modal__desc" id="modal-desc">Tell us a little about your label. We review every application by hand.</p>
+
+        <form class="brand-form" id="brand-form" novalidate>
+          <div class="field">
+            <label class="field__label" for="brand-name">Brand name</label>
+            <input class="field__input" id="brand-name" name="brandName" type="text" autocomplete="organization" required aria-describedby="brand-name-error" />
+            <p class="field__error" id="brand-name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="brand-website">Website</label>
+            <input class="field__input" id="brand-website" name="website" type="url" inputmode="url" autocomplete="url" placeholder="https://" required aria-describedby="brand-website-error" />
+            <p class="field__error" id="brand-website-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="brand-category">Category</label>
+            <select class="field__input" id="brand-category" name="category" required aria-describedby="brand-category-error">
+              <option value="" selected>Select a category</option>
+              <option value="apparel">Apparel</option>
+              <option value="footwear">Footwear</option>
+              <option value="bags">Bags &amp; leather goods</option>
+              <option value="jewelry">Jewelry</option>
+              <option value="eyewear">Eyewear</option>
+              <option value="accessories">Other accessories</option>
+            </select>
+            <p class="field__error" id="brand-category-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="brand-email">Contact email</label>
+            <input class="field__input" id="brand-email" name="contactEmail" type="email" inputmode="email" autocomplete="email" required aria-describedby="brand-email-error" />
+            <p class="field__error" id="brand-email-error" role="alert"></p>
+          </div>
+          <div class="brand-form__actions">
+            <button class="btn btn--outline" type="button" data-close-modal><span class="btn__label">Cancel</span></button>
+            <button class="btn btn--primary" type="submit" data-label="Submit application"><span class="btn__label">Submit application</span></button>
+          </div>
+        </form>
+        <p class="brand-form__success" id="brand-success" role="status" hidden>
+          <strong>Application received.</strong> We&rsquo;ll reply within five working days.
+        </p>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
